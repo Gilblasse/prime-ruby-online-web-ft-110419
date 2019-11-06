@@ -1,3 +1,5 @@
+require "pry"
+
 def prime? (num)
   if (num <=> num.abs) == 0 && num != 0 && num != 1
 		count = num
