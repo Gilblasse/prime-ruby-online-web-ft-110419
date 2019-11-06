@@ -1,4 +1,4 @@
-require "pry"
+require "benchmark"
 
 def prime? (num)
   if (num <=> num.abs) == 0 && num != 0 && num != 1
