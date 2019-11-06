@@ -1,7 +1,8 @@
 require "benchmark"
 
 def prime? (num)
-  
+  puts Benchmark.measure {
+  50_000.times do
   if (num <=> num.abs) == 0 && num != 0 && num != 1
 		count = num
 		divisible = 0
@@ -13,4 +14,5 @@ def prime? (num)
 	else
 		false
 	end
+}
 end
