@@ -1,7 +1,7 @@
 require "benchmark"
 
 def prime? (num)
-puts Benchmark.measure {
+  
   if (num <=> num.abs) == 0 && num != 0 && num != 1
 		count = num
 		divisible = 0
@@ -13,5 +13,4 @@ puts Benchmark.measure {
 	else
 		false
 	end
-}
 end
